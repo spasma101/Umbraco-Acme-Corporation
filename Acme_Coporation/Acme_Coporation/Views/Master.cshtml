@@ -19,8 +19,12 @@
 		@Html.Partial("~/Views/Partials/Base/_Header.cshtml")
 
 		<!--All page content-->
-		<main role="main" class="content content__wrap">
-			@RenderBody()
+		<main role="main" class="content content__wrap row">
+			<div class="col-12">
+				<div class="container">
+					@RenderBody()
+				</div>
+			</div>
 		</main>
 
 		@Html.Partial("~/Views/Partials/Base/_Footer.cshtml")

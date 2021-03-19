@@ -49,14 +49,14 @@
 
 	&__top-links {
 
-		display: none;
+		list-style-type: none;
+		width: 400px;
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-end;
+		margin: 2rem;
 
 		@include MQ(1024px) {
-			list-style-type: none;
-			width: 400px;
-			display: flex;
-			flex-direction: row;
-			justify-content: flex-end;
 			margin: 2.5rem;
 		}
 
