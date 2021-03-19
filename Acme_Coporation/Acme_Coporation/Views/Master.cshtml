@@ -1,10 +1,39 @@
-﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage
+﻿@using Acme_Corporation_Core.AppCode.Helpers
+@inherits Umbraco.Web.Mvc.UmbracoViewPage
 @{
 	Layout = null;
 }
 
 @* the fun starts here *@
 
-<h1>Master I am here!</h1>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	@Html.Partial("~/Views/Partials/Base/_Head.cshtml")
 
-@RenderBody()
+	<!--Renders out CSS per template via the template reference itself-->
+	<!--Renders additional styles that arnt mains tyles kept in the Head partial-->
+	@RenderSection("styles", false)
+</head>
+<body>
+	<div id="page__container" class=" container-fluid page__container ">
+		@Html.Partial("~/Views/Partials/Base/_Header.cshtml")
+
+		<!--All page content-->
+		<main role="main" class="content content__wrap">
+			@RenderBody()
+		</main>
+
+		@Html.Partial("~/Views/Partials/Base/_Footer.cshtml")
+
+	</div>
+
+
+	<!--Global JS for everywhere-->
+	<script type="text/javascript" src="@Fingerprint.Tag("/app_themes/js/_globals/main.min.js")"></script>
+	<!--Renders out scripts per template-->
+	@RenderSection("scripts", false)
+
+	<!--For scripts not to be contiane dwithin the main scripts package-->
+	@Html.Partial("~/Views/Partials/Base/_FooterResources.cshtml")
+</body>
+</html>

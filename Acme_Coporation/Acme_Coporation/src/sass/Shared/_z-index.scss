@@ -1,0 +1,12 @@
+// All instances of z-index should be managed here
+// Example use: z-index: map-get($zindex, header);
+
+$zindex: (
+  modal     : 90,
+  overlay   : 80,
+  dropdown  : 70,
+  header    : 60,
+  footer    : 50,
+  body      : 40,
+  behind    : -5
+);

@@ -249,3 +249,7 @@ C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Coporation\obj\De
 C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Coporation\obj\Debug\Acme_Coporation.csproj.CopyComplete
 C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Coporation\obj\Debug\Acme_Coporation.dll
 C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Coporation\obj\Debug\Acme_Coporation.pdb
+C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Coporation\obj\Debug\Acme_Coporation.csprojAssemblyReference.cache
+C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Coporation\bin\Acme_Corporation_Core.dll
+C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Coporation\bin\Acme_Corporation_Core.pdb
+C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Coporation\bin\Acme_Corporation_Core.dll.config

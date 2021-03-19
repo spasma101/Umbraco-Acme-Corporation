@@ -1,0 +1,93 @@
+// Fonts
+// $font-family: $main-font, Arial, Helvetica, sans-serif;
+// @font-face {
+//     font-family: averta-light;
+//     src: url(../../../src/fonts/averta-light.otf), url(../../../src/fonts/averta-light-webfont.eot);
+// }
+
+// @font-face {
+//     font-family: averta-regular;
+//     src: url(../../../src/fonts/averta-regular.otf), url(../../../src/fonts/averta-regular-webfont.eot);
+// }
+
+// @font-face {
+//     font-family: averta-bold;
+//     src: url(../../../src/fonts/averta-bold.otf), url(../../../src/fonts/averta-bold-webfont.eot);
+// }
+
+// @font-face {
+//     font-family: averta-semibold;
+//     src: url(../../../src/fonts/averta-regular.otf), url(../../../src/fonts/averta-semibold-webfont.eot);
+// }
+// @font-face {
+//     font-family: averta-extrabold;
+//     src: url(../../../src/fonts/averta-regular.otf), url(../../../src/fonts/averta-regular-webfont.eot);
+// }
+
+@font-face {
+	font-family: montserrat-regular;
+	src: url(../../../src/fonts/Montserrat/Montserrat-Regular.ttf) format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+// //Normal Fonts
+@font-face {
+	font-family: roboto-regular;
+	src: url(../../../src/fonts/Roboto/Roboto-Regular.ttf) format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+// FONT LINK: https://github.com/ellaism/multisig-transparency/tree/master/fonts/Maison%20Neue
+//**-- /eina --**//
+//Bold -- Mostly used for headings
+// @font-face {
+//     font-family: eina-normal-bold;
+// 	src: url(../fonts/eina/eina-01-bold.woff2) format('woff2'), url(../fonts/eina/eina-01-bold.woff) format('woff'), url(../fonts/eina/eina-01-bold.ttf) format('truetype');
+// 	font-weight: bold;
+// 	font-style: normal;
+// }
+//**-- /maisonNeue --**//
+//Demi fonts
+// @font-face {
+// 	font-family: maison-neue-light-italic;
+// 	src: url(../../../src/fonts/maisonNeue/MaisonNeue-DemiItalic.woff2) format('woff2'), url(../../../src/fonts/maisonNeue/MaisonNeue-DemiItalic.woff) format('woff'), url(../../../src/fonts/maisonNeue/MaisonNeue-DemiItalic.ttf) format('truetype');
+// 	font-weight: 300;
+// 	font-style: italic;
+// }
+
+// @font-face {
+// 	font-family: maison-neue-demi;
+// 	src: url(../../../src/fonts/maisonNeue/MaisonNeue-Demi.woff2) format('woff2'), url(../../../src/fonts/maisonNeue/MaisonNeue-Demi.woff) format('woff'), url(../../../src/fonts/maisonNeue/MaisonNeue-Demi.ttf) format('truetype');
+// 	font-weight: 300;
+// 	font-style: normal;
+// }
+// //Normal Fonts
+// @font-face {
+// 	font-family: maison-neue-italic-normal;
+// 	src: url(../../../src/fonts/maisonNeue/MaisonNeue-BookItalic.woff2) format('woff2'), url(../../../src/fonts/maisonNeue/MaisonNeue-BookItalic.woff) format('woff'), url(../../../src/fonts/maisonNeue/MaisonNeue-BookItalic.ttf) format('truetype');
+// 	font-weight: normal;
+// 	font-style: italic;
+// }
+
+// @font-face {
+// 	font-family: maison-neue-book;
+// 	src: url(../../../src/fonts/MaisonNeue/maisonneue-book-webfont.woff2) format('woff2'), url(../../../src/fonts/MaisonNeue/MaisonNeue-Book.woff) format('woff'), url(../../../src/fonts/MaisonNeue/MaisonNeue-Book.ttf) format('truetype');
+// 	font-weight: normal;
+// 	font-style: normal;
+// }
+// //Heavy Fonts
+// @font-face {
+// 	font-family: maison-neue-italic-bold;
+// 	src: url(../../../src/fonts/maisonNeue/MaisonNeue-BoldItalic.woff2) format('woff2'), url(../../../src/fonts/MaisonNeue-BoldItalic.woff) format('woff'), url(../../../src/fonts/maisonNeue/MaisonNeue-BoldItalic.ttf) format('truetype');
+// 	font-weight: bold;
+// 	font-style: italic;
+// }
+
+// @font-face {
+// 	font-family: maison-neue-normal-bold;
+// 	src: url(../../../src/fonts/maisonNeue/MaisonNeue-Bold.woff2) format('woff2'), url(../../../src/fonts/maisonNeue/MaisonNeue-Bold.woff) format('woff'), url(../../../src/fonts/maisonNeue/MaisonNeue-Bold.ttf) format('truetype');
+// 	font-weight: bold;
+// 	font-style: normal;
+// }

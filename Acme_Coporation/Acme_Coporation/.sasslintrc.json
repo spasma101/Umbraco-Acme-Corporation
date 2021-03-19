@@ -1,0 +1,10 @@
+{
+  "files": {
+    "include": "src/sass/*.sass",
+    "ignore": [
+      "node_modules/**"
+    ]
+  },
+  "rules": {
+  }
+}

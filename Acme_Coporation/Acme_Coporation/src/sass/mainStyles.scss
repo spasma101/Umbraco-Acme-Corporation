@@ -1,0 +1,20 @@
+﻿// to compile - npm run build:css
+
+    
+// Base
+    @import "./shared/variables";
+    @import "./shared/_mixins";
+
+// Layout
+    @import "./shared/_layout";
+    @import "./shared/_header";
+    @import "./shared/_footer";
+
+// Structure
+// @import "./shared/layout";
+
+// Components
+	// @import "./components/_cookie_bar";
+	@import "./components/jonsuh_hamburger_menu";
+
+//Overrides

@@ -1,0 +1,76 @@
+﻿* {
+	box-sizing: border-box;
+  }
+body {
+    margin: 0;
+    padding: 0;
+    font-family: $main-body-font;
+    color: $primary-text-color;
+    background-color: $white;
+    font-size: 10px;
+}
+.page {
+
+	&__container {
+		position: relative;
+		min-height: 100vh;
+	}
+	
+}
+.content {
+
+	padding: 16px 0;
+
+	//Set to test when not enough content
+	// height: 2000px;
+
+	&__wrap {
+		padding-bottom: 2.5rem;
+	}
+
+}
+.body-fixed {
+	position: fixed;
+}
+h1,h2,h3,h4,h5,h6 {
+	color: $ti_blue;
+	font-family: $main-heading-font;
+    font-weight: bold;
+}
+h1 {
+	font-size: 3rem;
+}
+h2 {
+	font-size: 2.2rem;
+}
+h3 {
+	font-size: 2rem;
+}
+h4 {
+	font-size: 1.8rem;
+}
+h5 {
+	font-size: 1.5rem;
+}
+h6 {
+	font-size: 1.2rem;
+}
+p, span, ul, li, a {
+	color: $ti_grey;
+	font-family: $main-body-font;
+}
+p {
+	font-size: $mobile_content_fs;
+}
+span {
+	font-size: $mobile_sub-heading_fs;
+}
+ul {
+	font-size: $mobile_sub-heading_fs;
+}
+li {
+	font-size: $mobile_content_fs;
+}
+a {
+	font-size: $mobile_content_fs;
+}

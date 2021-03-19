@@ -1,0 +1,42 @@
+{
+  "js": [
+    {
+      "filename": "main.min.js",
+      "dir": "_globals",
+      "input": [
+        "../node_modules/jquery/dist/jquery.min.js",
+        "scripts/cookie_bar.js",
+        "scripts/header.js"
+      ]
+    },
+    {
+      "filename": "forms.min.js",
+      "dir": "_globals",
+      "input": [
+        "../node_modules/jquery-validation/dist/jquery.validate.min.js"
+      ]
+    },
+    {
+      "filename": "home.min.js",
+      "dir": "homepage_template",
+      "input": [
+        "scripts/customs.js"
+      ]
+    },
+    {
+      "filename": "content.min.js",
+      "dir": "content_template",
+      "input": [
+        "scripts/customs.js"
+      ]
+    }
+  ],
+    "css" : [
+        {
+            "filename":"",
+            "dir" : "",
+            "input" : []
+        }
+    ]
+
+}

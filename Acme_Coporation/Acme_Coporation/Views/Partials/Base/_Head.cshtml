@@ -1,0 +1,37 @@
+﻿@using Acme_Corporation_Core.AppCode.Helpers
+@inherits Umbraco.Web.Mvc.UmbracoViewPage
+
+@{
+	var metaTitle = "Meta title Text";
+	var metaDescription = "Meta Description Text";
+	var siteName = "Acme Corporation";
+
+}
+
+<meta charset="utf-8">
+@*<script async src="https://cdn.ampproject.org/v0.js"></script>*@
+<title>@Html.Raw(metaTitle) | @siteName</title>
+<meta name="description" content="@Html.Raw(metaDescription)">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+<meta name="robots" content="none">
+
+<!--Add me to via Node later-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+
+
+<link rel="canonical" href="@Request.Url.AbsoluteUri" />
+<!--Global CSS such as fonts and bootstrap-->
+<link rel="stylesheet" href="@Fingerprint.Tag("/app_themes/css/global.css")" type="text/css" />
+<!--Main Styles for layout, buttons etc-->
+<link rel="stylesheet" href="@Fingerprint.Tag("/app_themes/css/mainStyles.css")" type="text/css" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" type="text/css" />
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="~/app_themes/images/icons/of-icon-180.png">
+
+<link rel="mask-icon" href="~/app_themes/images/icons/safari-pinned-tab.svg" color="#5B288A">
+<meta name="msapplication-TileColor" content="#5B288A">
+<meta name="theme-color" content="#5B288A" />
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css" />

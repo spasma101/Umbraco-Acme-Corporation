@@ -1,0 +1,286 @@
+/* Cookie bar styles */
+.cookie_bar {
+	padding: 0 10px;
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	display: none;
+	z-index: 2;
+}
+.cookie_bar_default_theme {
+	color: #333333;
+	background-color: #ffffff;
+}
+.cookie_bar_container {
+	display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+	justify-content: space-evenly;
+	max-width: 600px;
+	margin: 20px auto 20px auto;
+}
+.cookie_bar_buttons {
+	padding: 2em 0;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+}
+.cookie_bar_buttons button {
+	background: #188600;
+    color: #ffffff;
+    border: 1px;
+    padding: 5px;
+	font-size: 12px;
+	float: left;
+	margin: 0;
+	width: 125px;
+}
+
+.cookie_bar_buttons button:first-child {
+	margin-right: 10px;
+}
+
+.cookie_bar h3 {
+	text-decoration: underline;
+}
+.cookie_bar p {
+	font-size: 12px;
+}
+.cookie_bar_content button {
+	width: 100%;
+	background-color: white;
+	border: none;
+	border-radius: 5px;
+}
+.cookie_policy_dropdown {
+	height: 0;
+	background: transparent;
+}
+.cookie_policy_dropdown p {
+	margin: 1rem 0;
+    padding: 0;
+}
+.cookie_policy_dropdown ul {
+	margin: 0;
+	padding: 1rem 2.5rem;
+	height: 100%;
+	overflow-y: auto;
+	display: none;
+}
+.cookie_policy_dropdown ul li {
+	margin-bottom: 1rem;
+}
+.cookie_policy_dropdown p::after {
+	content: 'Open';
+	text-decoration: underline;
+	font-weight: bold;
+    text-align: right;
+	float:right;
+	// margin-right: 10px;
+	//FOR CHEVRON UNCOMMENT
+	// border-style: solid;
+    // border-width: 3px 3px 0px 0px;
+    // content: '';
+    // height: 18px;
+    // left: 0.15em;
+    // position: relative;
+    // top: 0.15em;
+    // transform: rotate(-45deg);
+    // vertical-align: top;
+    // width: 18px;
+    // float: right;
+    // margin: 5px;
+}
+.cookie_policy_dropdown p.bottom::after {
+	content: 'Close';
+	//FOR CHEVRON UNCOMMENT
+	// top: -0.85em;
+	// transform: rotate(135deg);
+}
+
+#cookie_bar_toggle {
+	color: #333333;
+	padding: 0 10px;
+	width: auto;
+	position: absolute;
+	bottom: -35px;
+	left: 5%;
+	cursor: pointer;
+	border-radius: 5px;
+	background-color: #ffffff;
+	transition: bottom 0.5s;
+	z-index: 1;
+	display: none !important;
+
+	@include MQ(768px) {
+		display: block;
+	}
+}
+#cookie_bar_toggle p {
+	margin: 0;
+	padding: 10px 10px 10px 10px;
+	font-size: 1.6em;
+}
+#cookie_bar_toggle:hover {
+	bottom: -5px;
+}
+
+#cookie_bar_toggle_mobile {
+	display: block;
+	height: 30px;
+
+	@include MQ(768px) {
+		display: none;
+	}
+
+	& p {
+		color: $white;
+		padding: 1.5rem 0;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		// justify-content: space-evenly;
+	}
+
+}
+
+
+/*Check box CSS - Required*/
+/* Customize the label (the container) */
+.checkbox_outer {
+	padding: 0;
+	margin: 0;
+	display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.checkbox_outer label {
+	font-weight: 300;
+    font-size: 1.3rem;
+}
+
+
+/* .checkbox_container {
+	display: block;
+	position: relative;
+	padding: 1rem 0 1rem 1.5rem;
+	border-radius: 5px;
+	margin-bottom: 10px;
+	cursor: pointer;
+	font-size: 18px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+  }
+
+  .checkbox_container input {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+	height: 0;
+	width: 0;
+  }
+  
+  .checkmark {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 12px;
+	width: 12px;
+	background-color: #eee;
+	border-radius: 5%;
+	margin-top: 1.1rem;
+  }
+  
+  .checkbox_container:hover input ~ .checkmark {
+	background-color: #ccc;
+  }
+  
+  .checkbox_container input:checked ~ .checkmark {
+	background-color: #ffffff;
+  }
+
+  .checkmark:after {
+	content: "";
+	position: absolute;
+	display: none;
+  }
+  
+  .checkbox_container input:checked ~ .checkmark:after {
+	display: block;
+  }
+  
+  .checkbox_container .checkmark:after {
+	top: 2px;
+	left: 2px;
+	width: 8px;
+	height: 8px;
+	border-radius: 10%;
+	background: #017eac;
+  }
+
+  .checkbox_container #necessary_checkmark:after {
+	top: 2px;
+	left: 2px;
+	width: 8px;
+	height: 8px;
+	border-radius: 10%;
+	background: #909090;
+  } */
+
+  .main_Content button {
+	background: #ffdd00;
+    color: black;
+    border: 1px;
+    padding: 8px 40px;
+    font-size: 18px;
+	height: 40px;
+  }
+
+  .center {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+  }
+  
+  input[type="checkbox"] {
+	margin-left: 5px;
+	position: relative;
+	width: 35px;
+	height: 15px;
+	-webkit-appearance: none;
+	background: #c6c6c6;
+	outline: none!important;
+	cursor: pointer;
+	border-radius: 20px;
+	box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+	transition: background 300ms linear;
+  }
+  
+  input:checked[type="checkbox"] {
+	background: #188600;
+  }
+  
+  input[type="checkbox"]::before {
+	content: "";
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	border-radius: 20px;
+	top: 0;
+	left: 0;
+	background: #fff;
+	transform: scale(1.1);
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+	transition: left 300ms linear;
+  }
+  
+  input:checked[type="checkbox"]::before {
+	left: 20px;
+  }
+  

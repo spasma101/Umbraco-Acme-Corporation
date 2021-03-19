@@ -1,0 +1,44 @@
+﻿// Fonts
+$main-heading-font: montserrat-regular;
+$main-body-font: roboto-regular;
+
+//Font Sizes
+$mobile_heading_fs: 1.6rem;
+$mobile_sub-heading_fs: 1.4rem;
+$mobile_content_fs: 1.3rem;
+$footer_base_size: 1.2rem;
+
+//Colors
+$white: #ffffff;//#333333;
+$ti_off_white: #f1f1f1;
+$ti_dark_blue: #022249;
+$ti_blue: #55bdca;
+$ti_blue_hover: #95ffff;
+//Alternative colors not really sure what for
+$ti_alternative_blue: #95ffff;
+$ti_alternative_blue_hover: #c7eef5;
+//Main yellow with hover
+$ti_yellow: #ef7b44;
+$ti_yellow_hover: #f39e76;
+//Greys for text and content blocks
+$ti_grey_dark: #383838;
+$ti_grey: #686868;
+$ti_lighter_grey: #b6b6b6;
+$ti_light_grey: #f3f3f3;
+
+
+// Colour Assignment
+$primary-colour: $ti_blue;
+$primary-heading-color: $ti_blue;
+$primary-text-color: $ti_grey;
+
+
+//Paddings and Margin
+$partialPadding: 15%;
+$baseContentPadding: 1em;
+
+//Line Heights
+$pLineHeight: 1.5em;
+//Box sizing
+//-webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+//    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
