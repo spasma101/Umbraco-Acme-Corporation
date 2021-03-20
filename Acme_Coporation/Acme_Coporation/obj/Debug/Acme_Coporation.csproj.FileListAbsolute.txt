@@ -66,6 +66,7 @@ C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Coporation\bin\ro
 C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Coporation\bin\roslyn\vbc.rsp
 C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Coporation\bin\roslyn\VBCSCompiler.exe
 C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Coporation\bin\roslyn\VBCSCompiler.exe.config
+C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Coporation\bin\Acme_Corporation_Core.dll
 C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Coporation\bin\AngleSharp.Css.dll
 C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Coporation\bin\AngleSharp.dll
 C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Coporation\bin\ClientDependency.Core.dll
@@ -140,6 +141,8 @@ C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Coporation\bin\Um
 C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Coporation\bin\Umbraco.ModelsBuilder.Embedded.dll
 C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Coporation\bin\Umbraco.Web.dll
 C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Coporation\bin\Umbraco.Web.UI.dll
+C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Coporation\bin\Acme_Corporation_Core.pdb
+C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Coporation\bin\Acme_Corporation_Core.dll.config
 C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Coporation\bin\AngleSharp.xml
 C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Coporation\bin\AngleSharp.Css.xml
 C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Coporation\bin\ClientDependency.Core.pdb
@@ -245,11 +248,8 @@ C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Coporation\bin\ru
 C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Coporation\bin\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
 C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Coporation\bin\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
 C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Coporation\bin\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Coporation\obj\Debug\Acme_Coporation.csprojAssemblyReference.cache
 C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Coporation\obj\Debug\Acme_Coporation.csproj.CoreCompileInputs.cache
 C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Coporation\obj\Debug\Acme_Coporation.csproj.CopyComplete
 C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Coporation\obj\Debug\Acme_Coporation.dll
 C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Coporation\obj\Debug\Acme_Coporation.pdb
-C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Coporation\obj\Debug\Acme_Coporation.csprojAssemblyReference.cache
-C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Coporation\bin\Acme_Corporation_Core.dll
-C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Coporation\bin\Acme_Corporation_Core.pdb
-C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Coporation\bin\Acme_Corporation_Core.dll.config

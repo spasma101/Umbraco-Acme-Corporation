@@ -1,0 +1,10 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage
+@{
+	Layout = "Master.cshtml";
+
+	var registerMemberTitle = Model.Value("registerMemberTitle");
+}
+	<h1>@registerMemberTitle</h1>
+	@{
+		Html.RenderAction("RenderRegister", "Member");
+	}

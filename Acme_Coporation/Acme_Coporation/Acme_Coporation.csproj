@@ -3149,6 +3149,11 @@
     <Content Include="Views\Partials\Base\_FooterResources.cshtml" />
     <Content Include="Views\Partials\Base\_Head.cshtml" />
     <Content Include="Views\Partials\Base\_Header.cshtml" />
+    <Content Include="Views\Partials\Membership\_Login.cshtml" />
+    <Content Include="Views\Partials\Membership\_Logout.cshtml" />
+    <Content Include="Views\Login.cshtml" />
+    <Content Include="Views\Partials\Membership\_Register.cshtml" />
+    <Content Include="Views\Register.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -3166,6 +3171,7 @@
       <Name>Acme_Corporation_Core</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

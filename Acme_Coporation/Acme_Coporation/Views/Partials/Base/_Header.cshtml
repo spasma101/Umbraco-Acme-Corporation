@@ -9,8 +9,15 @@
 
 			<ul class="header__top-links">
 				<li><a href="/" target="_blank">Home</a></li>
-				<li><a href="/" target="_blank">Login</a></li>
+				<li><a href="/login-page/" target="_blank">Account</a></li>
+				
 			</ul>
+			@{
+				if(Umbraco.MemberIsLoggedOn())
+				{
+					Html.RenderAction("RenderLogout", "Member");
+				}
+			}
 		</div>
 	</div>
 </header>

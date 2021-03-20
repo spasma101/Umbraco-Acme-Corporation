@@ -1,0 +1,17 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage
+@{
+	Layout = "Master.cshtml";
+
+	var loginTitle = Model.Value("loginTitle");
+	var loggedOutTitle = "Please Login below";
+}
+@if (Umbraco.MemberIsLoggedOn())
+{
+	<h1>@loginTitle</h1>
+	Html.RenderAction("RenderLogout", "Member");
+}
+else
+{
+	<h1>@loggedOutTitle</h1>
+	Html.RenderAction("RenderLogin", "Member");
+}
