@@ -53,6 +53,13 @@ namespace Umbraco.Web.PublishedModels
 		public string HomepageTitle => this.Value<string>("homepageTitle");
 
 		///<summary>
+		/// Nested Cards
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
+		[ImplementPropertyType("nestedCards")]
+		public IEnumerable<PageLinkCards> NestedCards => this.Value<IEnumerable<PageLinkCards>>("nestedCards");
+
+		///<summary>
 		/// Sub Title
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]

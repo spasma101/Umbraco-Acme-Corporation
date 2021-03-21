@@ -454,6 +454,8 @@
     <Content Include="src\images\acme_logo.svg" />
     <Content Include="src\images\icons\facebook.png" />
     <Content Include="src\images\icons\towergate-insurance-logo.png" />
+    <None Include="src\json_files\products.json" />
+    <Content Include="src\scripts\competition_form.js" />
     <Content Include="src\scripts\cookie_bar.js" />
     <Content Include="src\scripts\customs.js" />
     <Content Include="src\scripts\header.js" />
@@ -3154,6 +3156,9 @@
     <Content Include="Views\Login.cshtml" />
     <Content Include="Views\Partials\Membership\_Register.cshtml" />
     <Content Include="Views\Register.cshtml" />
+    <Content Include="Views\CompetitionFormPage.cshtml" />
+    <Content Include="Views\Products.cshtml" />
+    <Content Include="Views\Partials\Forms\_CompetitionForm.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

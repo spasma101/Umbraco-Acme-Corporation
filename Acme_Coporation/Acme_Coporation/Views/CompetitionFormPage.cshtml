@@ -1,0 +1,36 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<ContentModels.CompetitionFormPage>
+@using ContentModels = Umbraco.Web.PublishedModels;
+@{
+	Layout = "Master.cshtml";
+
+	var competitionPageTitle = Model.Value("competitionPageTitle");
+
+	var competitionPageSubTitle = Model.Value("competitionPageSubTitle");
+
+	var heroImage = Model.Value<IPublishedContent>("heroImage");
+
+	var formTitle = Model.Value("formTitle");
+
+	var formDescription = Model.Value("formDescription");
+
+
+}
+<div class="row">
+	<div class="col-12">
+		<div class="jumbotron jumbotron-fluid h-100" style="background-image: url(@heroImage.Url)">
+			<div class="container mt-5">
+				<h1 class="display-4">@competitionPageTitle</h1>
+				<p class="lead">@competitionPageSubTitle</p>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="row mt-5">
+	<div class="col-12">
+		<h2>@formTitle</h2>
+		<p>@formDescription</p>
+	</div>
+</div>
+<div class="row mt-5">
+	@Html.Partial("~/Views/Partials/Forms/_CompetitionForm.cshtml")
+</div>

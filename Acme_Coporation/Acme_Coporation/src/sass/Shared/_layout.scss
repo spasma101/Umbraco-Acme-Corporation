@@ -74,3 +74,16 @@ li {
 a {
 	font-size: $mobile_content_fs;
 }
+
+.jumbotron {
+	color: $white;
+	min-height: 260px;
+
+	& p {
+		color: $white;
+	}
+}
+
+.form-group, .form-control {
+	font-size: 1.5rem;
+}

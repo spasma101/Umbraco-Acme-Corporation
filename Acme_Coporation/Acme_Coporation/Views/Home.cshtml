@@ -1,6 +1,10 @@
-﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage
+﻿@using Umbraco.Web.Models
+@inherits Umbraco.Web.Mvc.UmbracoViewPage
 @{
 	Layout = "Master.cshtml";
+
+	var nestedCardContent = Model.Value<IEnumerable<IPublishedElement>>("nestedCards");
+
 }
 
 @* the fun starts here *@
@@ -8,10 +12,34 @@
 	<div class="col-12">
 		@if (Umbraco.MemberIsLoggedOn())
 		{
-			<h2>Ah! It is good to be home!</h2>
+			<div class="row">
+				<h1>@Model.Value("homepageTitle")</h1>
+			</div>
+			<div class="row mt-3">
+				<p>@Model.Value("subTitle")</p>
+			</div>
 
-			<h3>@Model.Value("homepageTitle")</h3>
-			<h3>@Model.Value("subTitle")</h3>
+			<div class="row mt-5">
+				@foreach (var nestedCard in nestedCardContent)
+				{
+					var cardTitle = nestedCard.Value("cardTitle");
+					var cardText = nestedCard.Value("cardText");
+					var cardLinkToPage = nestedCard.Value<Link>("cardLinkToPage");
+					var cardImage = nestedCard.Value<IPublishedContent>("cardImage");
+					<div class="col-sm-6">
+						<a href="@cardLinkToPage.Url" class="card-link">
+							<div class="card">
+								<img src="@cardImage.Url()" alt="@cardImage.Name" class="card-img-top">
+								<div class="card-body">
+									<h4 class="card-title">@cardTitle</h4>
+									<p class="card-text">@cardText</p>
+								</div>
+							</div>
+						</a>
+					</div>
+				}
+			</div>
+
 		}
 		else
 		{
@@ -21,4 +49,4 @@
 		}
 	</div>
 </div>
-	
+

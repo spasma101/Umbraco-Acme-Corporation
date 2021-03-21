@@ -251,9 +251,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="App_Code\Classes\ProductsCreate.cs" />
+    <Compile Include="App_Code\Classes\ProductSerialNumbers.cs" />
+    <Compile Include="App_Code\Controllers\CompetitionFormController.cs" />
     <Compile Include="App_Code\Controllers\MemberController.cs" />
+    <Compile Include="App_Code\Controllers\ProductCreateController.cs" />
     <Compile Include="App_Code\Helpers\Fingerprint.cs" />
     <Compile Include="App_Code\Models\LoginModel.cs" />
+    <Compile Include="App_Code\Models\ProductsModel.cs" />
     <Compile Include="Class1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

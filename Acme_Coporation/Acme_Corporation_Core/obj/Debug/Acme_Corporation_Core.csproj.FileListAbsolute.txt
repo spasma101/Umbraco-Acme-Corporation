@@ -150,8 +150,8 @@ C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Corporation_Core\
 C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Corporation_Core\bin\Debug\Umbraco.Web.pdb
 C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Corporation_Core\bin\Debug\Umbraco.Web.xml
 C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Corporation_Core\bin\Debug\Umbraco.Web.UI.xml
+C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Corporation_Core\obj\Debug\Acme_Corporation_Core.csprojAssemblyReference.cache
 C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Corporation_Core\obj\Debug\Acme_Corporation_Core.csproj.CoreCompileInputs.cache
 C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Corporation_Core\obj\Debug\Acme_Corporation_Core.csproj.CopyComplete
 C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Corporation_Core\obj\Debug\Acme_Corporation_Core.dll
 C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Corporation_Core\obj\Debug\Acme_Corporation_Core.pdb
-C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Corporation_Core\obj\Debug\Acme_Corporation_Core.csprojAssemblyReference.cache
