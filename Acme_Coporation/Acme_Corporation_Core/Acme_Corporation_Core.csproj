@@ -256,7 +256,9 @@
     <Compile Include="App_Code\Controllers\CompetitionFormController.cs" />
     <Compile Include="App_Code\Controllers\MemberController.cs" />
     <Compile Include="App_Code\Controllers\ProductCreateController.cs" />
+    <Compile Include="App_Code\Helpers\CommonHelpers.cs" />
     <Compile Include="App_Code\Helpers\Fingerprint.cs" />
+    <Compile Include="App_Code\Helpers\ProductsHelpers.cs" />
     <Compile Include="App_Code\Models\LoginModel.cs" />
     <Compile Include="App_Code\Models\ProductsModel.cs" />
     <Compile Include="Class1.cs" />

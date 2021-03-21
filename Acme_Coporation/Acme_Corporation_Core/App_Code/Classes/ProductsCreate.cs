@@ -1,47 +1,41 @@
 ﻿using System;
-using System.Net;
-using System.Collections.Generic;
-using System.Drawing;
 using System.IO;
 using System.Linq;
-using System.Text.RegularExpressions;
-using System.Web;
-using System.Text;
-using System.Xml;
-using System.Xml.Linq;
-using Acme_Corporation_Core.App_Code.Models;
-using Lucene.Net.Search.Function;
+using Acme_Corporation_Core.App_Code.Helpers;
 using Newtonsoft.Json;
-using Umbraco.Core;
 using Umbraco.Web;
 using Umbraco.Core.Services;
-using Umbraco.Core.Composing.CompositionExtensions;
 using Umbraco.Core.Models;
+using Umbraco.Core.Models.PublishedContent;
+
 namespace Acme_Corporation_Core.Classes
 {
 	public static class ProductsCreate
 		{
-			
+			private static IPublishedContent GetProducts(UmbracoHelper helper)
+			{
+				var homepageNode = Productshelpers.GetProducts(helper);
 
-			public static string CreateProducts(string filePath)
+				if (homepageNode == null)
+				{
+					throw new NullReferenceException("Products node blew up");
+				}
+
+				return homepageNode; 
+			}
+
+			public static string CreateProducts(string filePath, UmbracoHelper helper)
 			{
 				try
 				{
 
-					UmbracoHelper umbracoHelper = Umbraco.Web.Composing.Current.UmbracoHelper;
 					IContentService contentService = Umbraco.Core.Composing.Current.Services.ContentService;
 
-					// Sort out where the posts are being migrated to (parent node)
-					var homepage = umbracoHelper.ContentAtRoot().FirstOrDefault(n => n.ContentType.Alias == "home");
-					var products_listing_page = homepage.Children.FirstOrDefault(n => n.ContentType.Alias == "products");
-
-					var products_listing_page_key = products_listing_page.Key;
-
-					var product_guid = new Guid("e6d938d7-9e94-4c01-8d13-828ac3e26928");
+					var products_listing_page = GetProducts(helper);
 
 					if (products_listing_page == null)
 					{
-						return "Failed: No post products_listing_page";
+						throw new NullReferenceException("Expected content : got NULL");
 					}
 
 					using (StreamReader r = new StreamReader(filePath))
@@ -68,11 +62,11 @@ namespace Acme_Corporation_Core.Classes
 
 								if (existingProduct == null)
 								{
-									Console.WriteLine("{0} {1}", item.name, item.product_serial_number);
+									//Console.WriteLine("{0} {1}", item.name, item.product_serial_number);
 
 									//e6d938d7-9e94-4c01-8d13-828ac3e26928 - Parent GUID
 									var name = item.name.ToString();
-									var product = contentService.Create(name, product_guid, "Product");
+									var product = contentService.Create(name, products_listing_page.Id, "Product");
 
 									product.SetValue("productSerialNumber", item.product_serial_number);
 
@@ -83,8 +77,6 @@ namespace Acme_Corporation_Core.Classes
 									existingProduct.SetValue("productSerialNumber", item.product_serial_number);
 									contentService.SaveAndPublish(existingProduct);
 								}
-
-								
 
 							}
 						}
