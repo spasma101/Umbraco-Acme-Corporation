@@ -1,3 +1,4 @@
+C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Coporation\bin\roslyn\System.Reflection.Metadata.dll
 C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Coporation\bin\amd64\Microsoft.VC90.CRT\Microsoft.VC90.CRT.manifest
 C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Coporation\bin\amd64\Microsoft.VC90.CRT\msvcr90.dll
 C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Coporation\bin\amd64\sqlceca40.dll
@@ -48,7 +49,6 @@ C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Coporation\bin\ro
 C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Coporation\bin\roslyn\System.IO.FileSystem.Primitives.dll
 C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Coporation\bin\roslyn\System.Net.Http.dll
 C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Coporation\bin\roslyn\System.Net.Sockets.dll
-C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Coporation\bin\roslyn\System.Reflection.Metadata.dll
 C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Coporation\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
 C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Coporation\bin\roslyn\System.Security.Cryptography.Algorithms.dll
 C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Coporation\bin\roslyn\System.Security.Cryptography.Encoding.dll
@@ -72,6 +72,8 @@ C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Coporation\bin\An
 C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Coporation\bin\ClientDependency.Core.dll
 C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Coporation\bin\ClientDependency.Core.Mvc.dll
 C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Coporation\bin\CSharpTest.Net.Collections.dll
+C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Coporation\bin\Dapper.dll
+C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Coporation\bin\DapperExtensions.dll
 C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Coporation\bin\Examine.dll
 C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Coporation\bin\HtmlAgilityPack.dll
 C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Coporation\bin\HtmlSanitizer.dll
@@ -83,6 +85,7 @@ C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Coporation\bin\Li
 C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Coporation\bin\LightInject.Mvc.dll
 C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Coporation\bin\LightInject.Web.dll
 C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Coporation\bin\LightInject.WebApi.dll
+C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Coporation\bin\log4net.dll
 C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Coporation\bin\Lucene.Net.dll
 C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Coporation\bin\Markdown.dll
 C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Coporation\bin\Microsoft.AspNet.Identity.Core.dll
@@ -148,6 +151,8 @@ C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Coporation\bin\An
 C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Coporation\bin\ClientDependency.Core.pdb
 C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Coporation\bin\ClientDependency.Core.Mvc.pdb
 C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Coporation\bin\CSharpTest.Net.Collections.xml
+C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Coporation\bin\Dapper.pdb
+C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Coporation\bin\DapperExtensions.pdb
 C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Coporation\bin\Examine.pdb
 C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Coporation\bin\HtmlAgilityPack.pdb
 C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Coporation\bin\HtmlAgilityPack.xml
@@ -163,6 +168,7 @@ C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Coporation\bin\Li
 C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Coporation\bin\LightInject.WebApi.pdb
 C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Coporation\bin\LightInject.WebApi.xml
 C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Coporation\bin\LightInject.WebApi.dll.config
+C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Coporation\bin\log4net.xml
 C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Coporation\bin\Lucene.Net.pdb
 C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Coporation\bin\Lucene.Net.xml
 C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Coporation\bin\Microsoft.AspNet.Identity.Core.xml

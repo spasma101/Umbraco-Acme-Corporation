@@ -1,0 +1,49 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<ContentModels.Forms>
+@using ContentModels = Umbraco.Web.PublishedModels;
+@{
+	Layout = "Master.cshtml";
+
+	var formsTitle = Model.Value("formsTitle");
+
+	var formsDescription = Model.Value("formsDescription");
+
+	var heroImage = Model.Value<IPublishedContent>("heroImage");
+
+	var forms = Model.Children;
+
+}
+<div class="row">
+	<div class="col-12">
+		<div class="jumbotron jumbotron-fluid h-100" style="background-image: url(@heroImage.Url)">
+			<div class="container mt-5">
+				<h1 class="display-4" style="color: #05ffff;">@formsTitle</h1>
+				<p class="lead" style="color: #05ffff;">@formsDescription</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-12">
+		@foreach (var form in forms)
+		{
+			var formName = form.Name;
+			var firstName = form.Value("firstName");
+			var lastName = form.Value("lastName");
+			var emailAddress = form.Value("emailAddress");
+			var productSerialNumber = form.Value("productSerialNumber");
+			var productSerialNumber2 = form.Value("productSerialNumber2");
+			<div class="col-sm-3">
+				<div class="card">
+					<div class="card-body">
+						<h4 class="card-title">@formName</h4>
+						<p class="card-text">Full Name = @firstName @lastName</p>
+						<p class="card-text">Email Address = @emailAddress</p>
+						<p class="card-text">First Entry = @productSerialNumber</p>
+						<p class="card-text">Second Entry = @productSerialNumber2</p>
+					</div>
+				</div>
+			</div>
+		}
+	</div>
+</div>

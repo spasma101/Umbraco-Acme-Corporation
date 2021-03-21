@@ -1,7 +1,10 @@
 ﻿@using Acme_Corporation_Core.AppCode.Helpers
+@using Umbraco.Core.Composing
 @inherits Umbraco.Web.Mvc.UmbracoViewPage
 @{
 	Layout = null;
+
+
 }
 
 @* the fun starts here *@
@@ -15,6 +18,8 @@
 	@RenderSection("styles", false)
 </head>
 <body>
+	
+
 	<div id="page__container" class=" container-fluid page__container ">
 		@Html.Partial("~/Views/Partials/Base/_Header.cshtml")
 

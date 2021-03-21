@@ -60,6 +60,13 @@ namespace Umbraco.Web.PublishedModels
 		public string CompetitionPageTitle => this.Value<string>("competitionPageTitle");
 
 		///<summary>
+		/// Form
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]
+		[ImplementPropertyType("form")]
+		public object Form => this.Value("form");
+
+		///<summary>
 		/// Form Description
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder", "8.1.6")]

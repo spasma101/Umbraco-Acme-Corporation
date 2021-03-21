@@ -22,6 +22,8 @@ C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Corporation_Core\
 C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Corporation_Core\bin\Debug\ClientDependency.Core.dll
 C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Corporation_Core\bin\Debug\ClientDependency.Core.Mvc.dll
 C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Corporation_Core\bin\Debug\CSharpTest.Net.Collections.dll
+C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Corporation_Core\bin\Debug\Dapper.dll
+C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Corporation_Core\bin\Debug\DapperExtensions.dll
 C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Corporation_Core\bin\Debug\Examine.dll
 C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Corporation_Core\bin\Debug\HtmlAgilityPack.dll
 C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Corporation_Core\bin\Debug\HtmlSanitizer.dll
@@ -32,6 +34,7 @@ C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Corporation_Core\
 C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Corporation_Core\bin\Debug\LightInject.Mvc.dll
 C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Corporation_Core\bin\Debug\LightInject.Web.dll
 C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Corporation_Core\bin\Debug\LightInject.WebApi.dll
+C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Corporation_Core\bin\Debug\log4net.dll
 C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Corporation_Core\bin\Debug\Lucene.Net.dll
 C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Corporation_Core\bin\Debug\Markdown.dll
 C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Corporation_Core\bin\Debug\Microsoft.AspNet.Identity.Core.dll
@@ -87,6 +90,8 @@ C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Corporation_Core\
 C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Corporation_Core\bin\Debug\ClientDependency.Core.pdb
 C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Corporation_Core\bin\Debug\ClientDependency.Core.Mvc.pdb
 C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Corporation_Core\bin\Debug\CSharpTest.Net.Collections.xml
+C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Corporation_Core\bin\Debug\Dapper.pdb
+C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Corporation_Core\bin\Debug\DapperExtensions.pdb
 C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Corporation_Core\bin\Debug\Examine.pdb
 C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Corporation_Core\bin\Debug\HtmlAgilityPack.pdb
 C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Corporation_Core\bin\Debug\HtmlAgilityPack.xml
@@ -101,6 +106,7 @@ C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Corporation_Core\
 C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Corporation_Core\bin\Debug\LightInject.WebApi.pdb
 C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Corporation_Core\bin\Debug\LightInject.WebApi.xml
 C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Corporation_Core\bin\Debug\LightInject.WebApi.dll.config
+C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Corporation_Core\bin\Debug\log4net.xml
 C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Corporation_Core\bin\Debug\Lucene.Net.pdb
 C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Corporation_Core\bin\Debug\Lucene.Net.xml
 C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Corporation_Core\bin\Debug\Microsoft.AspNet.Identity.Core.xml
@@ -150,8 +156,8 @@ C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Corporation_Core\
 C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Corporation_Core\bin\Debug\Umbraco.Web.pdb
 C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Corporation_Core\bin\Debug\Umbraco.Web.xml
 C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Corporation_Core\bin\Debug\Umbraco.Web.UI.xml
-C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Corporation_Core\obj\Debug\Acme_Corporation_Core.csprojAssemblyReference.cache
 C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Corporation_Core\obj\Debug\Acme_Corporation_Core.csproj.CoreCompileInputs.cache
 C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Corporation_Core\obj\Debug\Acme_Corporation_Core.csproj.CopyComplete
 C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Corporation_Core\obj\Debug\Acme_Corporation_Core.dll
 C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Corporation_Core\obj\Debug\Acme_Corporation_Core.pdb
+C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Corporation_Core\obj\Debug\Acme_Corporation_Core.csprojAssemblyReference.cache

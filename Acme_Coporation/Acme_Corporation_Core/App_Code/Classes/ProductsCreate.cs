@@ -14,14 +14,14 @@ namespace Acme_Corporation_Core.Classes
 		{
 			private static IPublishedContent GetProducts(UmbracoHelper helper)
 			{
-				var homepageNode = Productshelpers.GetProducts(helper);
+				var productsNode = Productshelpers.GetProducts(helper);
 
-				if (homepageNode == null)
+				if (productsNode == null)
 				{
 					throw new NullReferenceException("Products node blew up");
 				}
 
-				return homepageNode; 
+				return productsNode; 
 			}
 
 			public static string CreateProducts(string filePath, UmbracoHelper helper)

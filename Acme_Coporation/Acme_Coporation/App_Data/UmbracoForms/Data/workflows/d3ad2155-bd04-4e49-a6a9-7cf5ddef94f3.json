@@ -1,0 +1,18 @@
+{
+  "id": "d3ad2155-bd04-4e49-a6a9-7cf5ddef94f3",
+  "name": "Send template email to jabbaaah@hotmail.com",
+  "form": "481cf36c-fad3-4b56-a594-4531886d1e1a",
+  "active": true,
+  "includeSensitiveData": "False",
+  "workflowTypeId": "17c61629-d984-4e86-b43b-a8407b3efea9",
+  "executesOn": "Submitted",
+  "settings": {
+    "RazorViewFilePath": "Forms/Emails/Example-Template.cshtml",
+    "Attachment": "",
+    "Email": "jabbaaah@hotmail.com",
+    "SenderEmail": "",
+    "ReplyToEmail": "",
+    "Subject": "The Form '{form_name}' was submitted"
+  },
+  "sortOrder": 1
+}

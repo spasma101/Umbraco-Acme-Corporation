@@ -1,13 +1,38 @@
-﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage
+﻿@using Umbraco.Core.Composing
+@inherits Umbraco.Web.Mvc.UmbracoViewPage
+@{
+}
+@*@Umbraco.RenderMacro("renderUmbracoForm", new { FormGuid = "481cf36c-fad3-4b56-a594-4531886d1e1a", FormTheme = "bootstrap3-horizontal", ExcludeScripts = "1", Class = "w-75 ml-auto mr-auto p-3" })*@
 <div class="col-12">
 	<form class="w-75 ml-auto mr-auto p-3">
+		
+		@if (Members.IsLoggedIn())
+		{
+			var user = Members.CurrentUserName;
+			var services = Current.Services.MemberService;
+			var servicesResult = services.GetByUsername(user);
+			var bob = servicesResult.ContentTypeAlias;
+			string[] names = servicesResult.Name.Split(' ');
+
+
+			<p>@bob</p>
+
+			<div class="form-group col-md-6">
+				<label for="inputFirstName">First Name</label>
+				<input type="text" class="form-control" id="inputFirstName" value="@names[0]" readonly>
+			</div>
+			<div class="form-group col-md-6">
+				<label for="inputLastName">Last Name</label>
+				<input type="text" class="form-control" id="inputLastName" value="@names[1]" readonly>
+			</div>
+			<div class="form-group col-md-6">
+				<label for="inputEmailAddress">Email Address</label>
+				<input type="text" class="form-control" id="inputEmailAddress" value="@servicesResult.Email" readonly>
+			</div>
+		}
 		<div class="form-group col-md-6">
-			<label for="inputFirstName">First Name</label>
-			<input type="text" class="form-control" id="inputFirstName" placeholder="First Name">
-		</div>
-		<div class="form-group col-md-6">
-			<label for="inputLastName">Last Name</label>
-			<input type="text" class="form-control" id="inputLastName" placeholder="Last Name">
+			<label for="inputProductSerialNumber">Product Serial Number</label>
+			<input type="text" class="form-control" id="inputProductSerialNumber" placeholder="Product Serial Number">
 		</div>
 
 		<div class="form-group col-md-6">
@@ -16,5 +41,3 @@
 
 	</form>
 </div>
-
-

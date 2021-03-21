@@ -32,5 +32,19 @@
 	</div>
 </div>
 <div class="row mt-5">
-	@Html.Partial("~/Views/Partials/Forms/_CompetitionForm.cshtml")
+	@Html.Partial("~/Views/Partials/Forms/_CompetitionForm.cshtml", Model)
+</div>
+
+<div>
+	<div class="col-12">
+		<div id="successfulPost" class="w-75 ml-auto mr-auto p-3 success">
+			<h3>Woo hoo You're In!</h3>
+		</div>
+		<div id="errorPostFailed" class="w-75 ml-auto mr-auto p-3 error">
+			<h3>Uh-Oh! This Isn't looking good! Try again :)</h3>
+		</div>
+		<div id="tooManySubmissions" class="w-75 ml-auto mr-auto p-3 error">
+			<h3>Too many form submissions for this product :( buy something else ;)</h3>
+		</div>
+	</div>
 </div>
