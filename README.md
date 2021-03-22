@@ -59,3 +59,11 @@ Users for Backend
 Backend User : admin@acme.com Password: Password@123
 
 /////////////////////////////////////////////////////////////////////////////////////
+NPM, SASS and JS compiler
+/////////////////////////////////////////////////////////////////////////////////////
+DIR to ruin command from:
+C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Coporation
+
+npm install to install node_modules
+
+'npm run dev' to begin compiling
