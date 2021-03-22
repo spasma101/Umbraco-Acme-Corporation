@@ -15,36 +15,45 @@
 
 
 }
-<div class="row">
-	<div class="col-12">
-		<div class="jumbotron jumbotron-fluid h-100" style="background-image: url(@heroImage.Url)">
-			<div class="container mt-5">
-				<h1 class="display-4">@competitionPageTitle</h1>
-				<p class="lead">@competitionPageSubTitle</p>
+@if (Umbraco.MemberIsLoggedOn())
+{
+	<div class="row">
+		<div class="col-12">
+			<div class="jumbotron jumbotron-fluid h-100" style="background-image: url(@heroImage.Url)">
+				<div class="container mt-5">
+					<h1 class="display-4">@competitionPageTitle</h1>
+					<p class="lead">@competitionPageSubTitle</p>
+				</div>
 			</div>
 		</div>
 	</div>
-</div>
-<div class="row mt-5">
-	<div class="col-12">
-		<h2>@formTitle</h2>
-		<p>@formDescription</p>
+	<div class="row mt-5">
+		<div class="col-12">
+			<h2>@formTitle</h2>
+			<p>@formDescription</p>
+		</div>
 	</div>
-</div>
-<div class="row mt-5">
-	@Html.Partial("~/Views/Partials/Forms/_CompetitionForm.cshtml", Model)
-</div>
+	<div class="row mt-5">
+		@Html.Partial("~/Views/Partials/Forms/_CompetitionForm.cshtml", Model)
+	</div>
 
-<div>
-	<div class="col-12">
-		<div id="successfulPost" class="w-75 ml-auto mr-auto p-3 success">
-			<h3>Woo hoo You're In!</h3>
-		</div>
-		<div id="errorPostFailed" class="w-75 ml-auto mr-auto p-3 error">
-			<h3>Uh-Oh! This Isn't looking good! Try again :)</h3>
-		</div>
-		<div id="tooManySubmissions" class="w-75 ml-auto mr-auto p-3 error">
-			<h3>Too many form submissions for this product :( buy something else ;)</h3>
+	<div>
+		<div class="col-12">
+			<div id="successfulPost" class="w-75 ml-auto mr-auto p-3 success">
+				<h3>Woo hoo You're In!</h3>
+			</div>
+			<div id="errorPostFailed" class="w-75 ml-auto mr-auto p-3 error">
+				<h3>Uh-Oh! This Isn't looking good! Try again :)</h3>
+			</div>
+			<div id="tooManySubmissions" class="w-75 ml-auto mr-auto p-3 error">
+				<h3>Too many form submissions for this product :( buy something else ;)</h3>
+			</div>
 		</div>
 	</div>
-</div>
+}
+else
+{
+	<h1>Please Login to Continue to the website</h1>
+	Html.RenderAction("RenderLogin", "Member");
+
+}

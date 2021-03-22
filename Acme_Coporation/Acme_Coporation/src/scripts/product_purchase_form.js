@@ -7,8 +7,10 @@ var product_purchase_form = {
 			jquery_body_element: $(document.body),
 			jquery_head_element: $('head'),
 			//Classes
+			product_list: ('.product_list'),
 			current_user_fullname: $('.currentUserFullName'),
 			current_user_email: $('.currentUserEmail'),
+			product_name: $('.productName'),
 			product_serial_number: $('.productSerialNumber'),
 			
 
@@ -18,15 +20,18 @@ var product_purchase_form = {
 
 		let _this = this;
 
-		$(".product_submit").on('click', function () {
+		$(".product_submit").on('click', function (e) {
+
+			// e.preventDefault();
+
+			let current_selected_product_name = $(this).parent(_this.data.elements.product_list).find(_this.data.elements.product_name).data('productname');
+			let current_selected_product_serial_number = $(this).parent(_this.data.elements.product_list).find(_this.data.elements.product_serial_number).data('productserialnumber');
 
 			var formData = new FormData();
-			console.log(_this.data.elements.current_user_fullname.data('currentuserfullname'));
 			formData.append("fullname", _this.data.elements.current_user_fullname.data('currentuserfullname'));
-			console.log(_this.data.elements.current_user_email.data('currentuseremail'));
 			formData.append("emailaddress", _this.data.elements.current_user_email.data('currentuseremail'));
-			console.log(_this.data.elements.product_serial_number.data('productserialnumber'));
-			formData.append("productserialnumber", _this.data.elements.product_serial_number.data('productserialnumber'));
+			formData.append("productname", current_selected_product_name);
+			formData.append("productserialnumber", current_selected_product_serial_number);
 
 			$.ajax({
 				type: "POST",

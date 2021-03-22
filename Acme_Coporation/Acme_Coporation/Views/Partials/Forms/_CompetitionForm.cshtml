@@ -11,11 +11,11 @@
 			var user = Members.CurrentUserName;
 			var services = Current.Services.MemberService;
 			var servicesResult = services.GetByUsername(user);
-			var bob = servicesResult.ContentTypeAlias;
+			var memberType = servicesResult.ContentTypeAlias;
 			string[] names = servicesResult.Name.Split(' ');
 
 
-			<p>@bob</p>
+			<p>@memberType</p>
 
 			<div class="form-group col-md-6">
 				<label for="inputFirstName">First Name</label>

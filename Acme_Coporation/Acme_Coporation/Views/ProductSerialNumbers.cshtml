@@ -8,9 +8,15 @@
 
 	var productsSubTitle = Model.Value("productsSubTitle");
 
-	var products = Model.Children<Product>();
+	var products = Umbraco.ContentSingleAtXPath("//products").Descendants();
+
+	var user = Members.CurrentUserName;
+	var services = Current.Services.MemberService;
+
+	var servicesResult = services.GetByUsername(user);
+	var memberType = servicesResult.ContentTypeAlias;
 }
-@if (Umbraco.MemberIsLoggedOn())
+@if (Umbraco.MemberIsLoggedOn() && memberType == "adminMember")
 {
 <div class="row">
 	<div class="col-12">
@@ -22,7 +28,7 @@
 	<div class="col-12 mt-5">
 		@{
 
-			var pageSize = 10;
+			var pageSize = 50;
 			var page = 1;
 			int.TryParse(Request.QueryString["page"], out page);
 			var totalPages = (int)Math.Ceiling((double)products.Count() / (double)pageSize);
@@ -44,24 +50,8 @@
 				<div class="col-sm-3">
 					<div class="card">
 						<div class="card-body">
-									<h4 class="card-title">@productName.Replace("_", " ")</h4>
+							<h4 class="card-title">@productName.Replace("_", " ")</h4>
 							<p class="card-text">@productSerialNumber</p>
-							@if (Members.IsLoggedIn())
-							{
-								var user = Members.CurrentUserName;
-								var services = Current.Services.MemberService;
-								var servicesResult = services.GetByUsername(user);
-								var currentUserFullName = servicesResult.Name;
-								var currentUserEmail = servicesResult.Email;
-
-								<form class="product_list m-0 p-0">
-									<input type="hidden" class="currentUserFullName" data-currentuserfullname="@currentUserFullName" />
-									<input type="hidden" class="productName" data-productname="@productName" />
-									<input type="hidden" class="currentUserEmail" data-currentuseremail="@currentUserEmail" />
-									<input type="hidden" class="productSerialNumber" data-productserialnumber="@productSerialNumber" />
-									<button type="submit" id="product_submit" class="btn btn-primary mb-2 product_submit">Buy Me!</button>
-								</form>
-							}
 						</div>
 					</div>
 				</div>

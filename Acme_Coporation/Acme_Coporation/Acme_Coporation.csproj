@@ -3347,6 +3347,9 @@
     <Content Include="Views\Partials\Forms\Themes\default\ScrollToFormScript.cshtml" />
     <Content Include="Views\Partials\Forms\Themes\default\Submitted.cshtml" />
     <Content Include="Views\Forms.cshtml" />
+    <Content Include="Views\Shared\Emails\ProductPurchaseFormTemplate.cshtml" />
+    <Content Include="Views\Admin.cshtml" />
+    <Content Include="Views\ProductSerialNumbers.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

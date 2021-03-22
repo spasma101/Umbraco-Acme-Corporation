@@ -22,7 +22,9 @@ var competition_form = {
 
 		let _this = this;
 
-		$("#submit").on('click', function () {
+		$("#submit").on('click', function (e) {
+
+			e.preventDefault();
 
 			var formData = new FormData();
 
@@ -39,7 +41,6 @@ var competition_form = {
 				processData: false, 
 				data: formData,
 				success: function (result, status, xhr) {
-					console.log(result);
 					if(result === "Status = : Done!: One Code added") {
 						alert(result);
 						window.location.replace("/amazing-competition-page/?success=true");

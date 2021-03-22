@@ -4,6 +4,7 @@ namespace Acme_Corporation_Core.App_Code.Helpers
     {
         public static string umbracoDbDSN => AppSettingsHelper.GetConnectionString("umbracoDbDSN");
         public static bool IsTest => AppSettingsHelper.GetSetting("IsTest").ToBool();
+        public static string IsTestingEnvironment => AppSettingsHelper.GetSetting("IsTestingEnvironment");
         public static string TestingEmailRecipent => AppSettingsHelper.GetSetting("TestingEmailRecipent");
         public static string ProductionEmailRecipient => AppSettingsHelper.GetSetting("ProductionEmailRecipient");
     }
