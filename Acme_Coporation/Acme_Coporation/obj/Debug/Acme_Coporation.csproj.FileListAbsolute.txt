@@ -259,3 +259,5 @@ C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Coporation\obj\De
 C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Coporation\obj\Debug\Acme_Coporation.csproj.CopyComplete
 C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Coporation\obj\Debug\Acme_Coporation.dll
 C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Coporation\obj\Debug\Acme_Coporation.pdb
+C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Coporation\bin\RazorEngine.dll
+C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Coporation\bin\RazorEngine.xml

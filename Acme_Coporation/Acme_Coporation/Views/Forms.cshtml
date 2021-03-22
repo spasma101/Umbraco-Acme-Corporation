@@ -9,7 +9,7 @@
 
 	var heroImage = Model.Value<IPublishedContent>("heroImage");
 
-	var forms = Model.Children;
+	var forms = Model.Children<Form>();
 
 }
 <div class="row">
@@ -23,26 +23,128 @@
 	</div>
 </div>
 
-<div class="row">
-	<div class="col-12">
-		@foreach (var form in forms)
-		{
-			var formName = form.Name;
-			var firstName = form.Value("firstName");
-			var lastName = form.Value("lastName");
-			var emailAddress = form.Value("emailAddress");
-			var productSerialNumber = form.Value("productSerialNumber");
-			var productSerialNumber2 = form.Value("productSerialNumber2");
-			<div class="col-sm-3">
-				<div class="card">
-					<div class="card-body">
-						<h4 class="card-title">@formName</h4>
-						<p class="card-text">Full Name = @firstName @lastName</p>
-						<p class="card-text">Email Address = @emailAddress</p>
-						<p class="card-text">First Entry = @productSerialNumber</p>
-						<p class="card-text">Second Entry = @productSerialNumber2</p>
+<div class="row mt-5">
+	<div class="col-12 mt-5">
+		@{
+
+			var pageSize = 12;
+			var page = 1;
+			int.TryParse(Request.QueryString["page"], out page);
+			var totalPages = (int)Math.Ceiling((double)forms.Count() / (double)pageSize);
+
+
+			if (page > totalPages)
+			{
+				page = totalPages;
+			}
+			else if (page < 1)
+			{
+				page = 1;
+			}
+
+			foreach (var form in forms.Skip((page - 1) * pageSize).Take(pageSize))
+			{
+				var formName = form.Name;
+				var firstName = form.Value("firstName");
+				var lastName = form.Value("lastName");
+				var emailAddress = form.Value("emailAddress");
+				var productSerialNumber = form.Value("productSerialNumber");
+				var productSerialNumber2 = form.Value("productSerialNumber2");
+				<div class="col-sm-3">
+					<div class="card">
+						<div class="card-body">
+							<h4 class="card-title">@formName</h4>
+							<p class="card-text">Full Name = @firstName @lastName</p>
+							<p class="card-text">Email Address = @emailAddress</p>
+							<p class="card-text">First Entry = @productSerialNumber</p>
+							<p class="card-text">Second Entry = @productSerialNumber2</p>
+						</div>
 					</div>
 				</div>
+			}
+
+			<div class="pagination">
+
+				@if (totalPages > 0)
+				{
+					<ul> Pagination
+						@{
+							int showMax = 10;
+
+							//First Page
+							if (page > 1)
+							{
+
+								<li>
+									<a href="?page=@(page - 1)">&#9668;</a>
+								</li>
+
+								<li>
+									<a href="?page=1">&hellip;</a>
+								</li>
+							}
+
+							//Pages
+							if (page <= totalPages)
+							{
+								for (int i = page - 4; i >= page - 4; i++)
+								{
+
+									if (i >= 1 && i != page)
+									{
+										<li>
+											<a href="?page=@i">@i</a>
+										</li>
+									}
+									if (i == page)
+									{
+										break;
+									}
+								}
+
+
+								<li>
+									<a class="pagination__Current" href="?page=@page">@page</a>
+								</li>
+
+
+								for (int x = page + 1; x <= page + 4; x++)
+								{
+									if (x <= totalPages && x != page)
+									{
+										<li>
+											<a href="?page=@x">@x</a>
+										</li>
+									}
+									if (x > totalPages)
+									{
+										break;
+									}
+								}
+
+
+							}
+
+							//Last Page
+							if (page < totalPages)
+							{
+								<li>
+									<a href="?page=@(totalPages)">&hellip;</a>
+
+								</li>
+								<li>
+									<a href="?page=@(page + 1)">&#9658;</a>
+
+								</li>
+							}
+							else if (page == totalPages)
+							{
+							}
+						}
+
+					</ul>
+				}
+
 			</div>
 		}
 	</div>

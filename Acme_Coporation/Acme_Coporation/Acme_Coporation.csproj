@@ -609,6 +609,7 @@
     <Content Include="src\scripts\cookie_bar.js" />
     <Content Include="src\scripts\customs.js" />
     <Content Include="src\scripts\header.js" />
+    <Content Include="src\scripts\product_purchase_form.js" />
     <Content Include="src\tasks\build\build_css.js" />
     <Content Include="src\tasks\build\build_js.js" />
     <Content Include="src\tasks\bundles\bundleMinify_js.js" />

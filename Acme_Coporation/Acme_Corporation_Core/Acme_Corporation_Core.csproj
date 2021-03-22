@@ -138,6 +138,9 @@
     <Reference Include="Owin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f0ebd12fd5e55cc5, processorArchitecture=MSIL">
       <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
     </Reference>
+    <Reference Include="RazorEngine, Version=3.10.0.0, Culture=neutral, PublicKeyToken=9ee697374c7e744a, processorArchitecture=MSIL">
+      <HintPath>..\packages\RazorEngine.3.10.0\lib\net45\RazorEngine.dll</HintPath>
+    </Reference>
     <Reference Include="Semver, Version=2.0.4.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Semver.2.0.4\lib\net452\Semver.dll</HintPath>
     </Reference>
@@ -263,13 +266,17 @@
     <Compile Include="App_Code\Classes\FormsCreate.cs" />
     <Compile Include="App_Code\Classes\ProductsCreate.cs" />
     <Compile Include="App_Code\Classes\ProductSerialNumbers.cs" />
+    <Compile Include="App_Code\Controllers\ProductsPurchaseFormController.cs" />
     <Compile Include="App_Code\Controllers\CompetitionFormController.cs" />
     <Compile Include="App_Code\Controllers\MemberController.cs" />
     <Compile Include="App_Code\Controllers\ProductCreateController.cs" />
     <Compile Include="App_Code\Helpers\AppSettings\AppSettings.cs" />
     <Compile Include="App_Code\Helpers\AppSettings\AppSettingsHelper.cs" />
+    <Compile Include="App_Code\Helpers\AppSettings\Coversions.cs" />
     <Compile Include="App_Code\Helpers\CommonHelpers.cs" />
+    <Compile Include="App_Code\Helpers\FileHelper.cs" />
     <Compile Include="App_Code\Helpers\Fingerprint.cs" />
+    <Compile Include="App_Code\Helpers\FormHelperMethods.cs" />
     <Compile Include="App_Code\Helpers\FormsHelpers.cs" />
     <Compile Include="App_Code\Helpers\ProductsHelpers.cs" />
     <Compile Include="App_Code\Models\CompetitionSubmit.cs" />
@@ -278,6 +285,9 @@
     <Compile Include="App_Code\Repository\CompetitionFormRepository.cs" />
     <Compile Include="App_Code\Repository\Repository.cs" />
     <Compile Include="App_Code\Repository\RepositoryBase.cs" />
+    <Compile Include="App_Code\Services\Email.cs" />
+    <Compile Include="App_Code\Services\SendEmailService.cs" />
+    <Compile Include="App_Code\Services\SmtpService.cs" />
     <Compile Include="Class1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
