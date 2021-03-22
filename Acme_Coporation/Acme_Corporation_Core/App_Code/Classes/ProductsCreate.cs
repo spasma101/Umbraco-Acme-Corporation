@@ -66,7 +66,8 @@ namespace Acme_Corporation_Core.Classes
 
 									//e6d938d7-9e94-4c01-8d13-828ac3e26928 - Parent GUID
 									var name = item.name.ToString();
-									var product = contentService.Create(name, products_listing_page.Id, "Product");
+									var clean_name = name.Replace("_", " ");
+									var product = contentService.Create(clean_name, products_listing_page.Id, "Product");
 
 									product.SetValue("productSerialNumber", item.product_serial_number);
 

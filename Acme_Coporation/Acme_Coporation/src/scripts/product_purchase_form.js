@@ -22,7 +22,7 @@ var product_purchase_form = {
 
 		$(".product_submit").on('click', function (e) {
 
-			// e.preventDefault();
+			e.preventDefault();
 
 			let current_selected_product_name = $(this).parent(_this.data.elements.product_list).find(_this.data.elements.product_name).data('productname');
 			let current_selected_product_serial_number = $(this).parent(_this.data.elements.product_list).find(_this.data.elements.product_serial_number).data('productserialnumber');

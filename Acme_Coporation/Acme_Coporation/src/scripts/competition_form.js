@@ -18,55 +18,87 @@ var competition_form = {
 
 		}
 	},
-	init: function() {
+	init: function () {
 
 		let _this = this;
 
+		$("#competitionForm").validate({
+			errorElement: "span",
+			errorClass: "form-error",
+			rules: {
+				"inputProductSerialNumber": { required: true, maxlength: 50, range: [12329871237, 12329871336]},
+				"inputEmailAddress": { required: true, email: true, maxlength: 50 },
+				"currentUserAge": { required: true, maxlength: 3, range: [18, 999] }
+	
+			},
+			messages: {
+				"inputProductSerialNumber": {
+					required: "Please Enter a Valid Product Serial Number",
+					maxlength: "Max length exceeded",
+					range: "Invalid Serial Number"
+				},
+				"inputEmailAddress": {
+					required: "Please enter your Email address",
+					maxlength: "Max length exceeded"
+				},
+				"currentUserAge": {
+					required: "Please enter your Age",
+					maxlength: "Max length exceeded",
+					range: "You are too young! NO!!"
+				}
+			}
+		});
+
 		$("#submit").on('click', function (e) {
 
-			e.preventDefault();
+			if ($("#competitionForm").valid() == true) {
+				e.preventDefault();
 
-			var formData = new FormData();
+				var formData = new FormData();
 
-			formData.append("firstname", _this.data.elements.input_first_name.val().trim());
-			formData.append("lastname", _this.data.elements.input_last_name.val().trim());
-			formData.append("emailaddress", _this.data.elements.input_email_address.val().trim());
-			formData.append("productserialnumber", _this.data.elements.input_product_serial_number.val().trim());
+				formData.append("firstname", _this.data.elements.input_first_name.val().trim());
+				formData.append("lastname", _this.data.elements.input_last_name.val().trim());
+				formData.append("emailaddress", _this.data.elements.input_email_address.val().trim());
+				formData.append("productserialnumber", _this.data.elements.input_product_serial_number.val().trim());
 
-			$.ajax({
-				type: "POST",
-				url: "/umbraco/api/CompetitionForm/competitionformsubmit",
-				dataType: "json",
-				contentType: false, 
-				processData: false, 
-				data: formData,
-				success: function (result, status, xhr) {
-					if(result === "Status = : Done!: One Code added") {
-						alert(result);
-						window.location.replace("/amazing-competition-page/?success=true");
-						return;
-					} 
-					if(result === "Status = : Done!: Second code added") {
-						alert(result);
-						window.location.replace("/amazing-competition-page/?success=true");
-						return;
+				$.ajax({
+					type: "POST",
+					url: "/umbraco/api/CompetitionForm/competitionformsubmit",
+					dataType: "json",
+					contentType: false,
+					processData: false,
+					data: formData,
+					success: function (result, status, xhr) {
+						if (result === "Status = : Done!: One Code added") {
+							alert(result);
+							window.location.replace("/amazing-competition-page/?success=true");
+							return;
+						}
+						if (result === "Status = : Done!: Second code added") {
+							alert(result);
+							window.location.replace("/amazing-competition-page/?success=true");
+							return;
+						}
+						if (result === "Status = : Error: too many entries made") {
+							alert(result);
+							window.location.replace("/amazing-competition-page/?error=too-many-entries");
+							return;
+						}
+						if (result === "Status = : Error: Form Creation Failed") {
+							alert(result);
+							window.location.replace("/amazing-competition-page/?error=form-submit-failed");
+							return;
+						}
+					},
+					error: function (xhr, status, error) {
+						alert(status);
 					}
-					if(result === "Status = : Error: too many entries made") {
-						alert(result);
-						window.location.replace("/amazing-competition-page/?error=too-many-entries");
-						return;
-					}
-					if(result === "Status = : Error: Form Creation Failed") {
-						alert(result);
-						window.location.replace("/amazing-competition-page/?error=form-submit-failed");
-						return;
-					}
-				},
-				error: function (xhr, status, error) {
-					alert(status);
-				}
-			});
+				});
+			} else {
+				e.preventDefault();
+			}
 		});
+
 		let current_url = window.location.href;
 		if (current_url.indexOf("success") > -1) {
 			_this.data.elements.successful_post.css('display', 'block');
