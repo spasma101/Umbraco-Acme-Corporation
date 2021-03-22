@@ -18,145 +18,154 @@
 		<h2>@productsSubTitle</h2>
 	</div>
 </div>
-<div class="row mt-5">
-	<div class="col-12 mt-5">
-		@{
+	<div class="row mt-5">
+		<div class="col-12 mt-5">
+			@{
 
-			var pageSize = 10;
-			var page = 1;
-			int.TryParse(Request.QueryString["page"], out page);
-			var totalPages = (int)Math.Ceiling((double)products.Count() / (double)pageSize);
+				var pageSize = 10;
+				var page = 1;
+				int.TryParse(Request.QueryString["page"], out page);
+				var totalPages = (int)Math.Ceiling((double)products.Count() / (double)pageSize);
 
 
-			if (page > totalPages)
-			{
-				page = totalPages;
-			}
-			else if (page < 1)
-			{
-				page = 1;
-			}
-
-			foreach (var product in products.Skip((page - 1) * pageSize).Take(pageSize))
-			{
-				var productName = product.Name;
-				var productSerialNumber = product.Value("productSerialNumber");
-				<div class="col-sm-3">
-					<div class="card">
-						<div class="card-body">
-									<h4 class="card-title">@productName.Replace("_", " ")</h4>
-							<p class="card-text">@productSerialNumber</p>
-							@if (Members.IsLoggedIn())
-							{
-								var user = Members.CurrentUserName;
-								var services = Current.Services.MemberService;
-								var servicesResult = services.GetByUsername(user);
-								var currentUserFullName = servicesResult.Name;
-								var currentUserEmail = servicesResult.Email;
-
-								<form class="product_list m-0 p-0">
-									<input type="hidden" class="currentUserFullName" data-currentuserfullname="@currentUserFullName" />
-									<input type="hidden" class="productName" data-productname="@productName" />
-									<input type="hidden" class="currentUserEmail" data-currentuseremail="@currentUserEmail" />
-									<input type="hidden" class="productSerialNumber" data-productserialnumber="@productSerialNumber" />
-									<button type="submit" id="product_submit" class="btn btn-primary mb-2 product_submit">Buy Me!</button>
-								</form>
-							}
-						</div>
-					</div>
-				</div>
-			}
-
-			<div class="pagination">
-
-				@if (totalPages > 0)
+				if (page > totalPages)
 				{
-					<ul>
-						Pagination
-						@{
-							int showMax = 8;
-
-							//First Page
-							if (page > 1)
-							{
-
-								<li>
-									<a href="?page=@(page - 1)">&#9668;</a>
-								</li>
-
-								<li>
-									<a href="?page=1">&hellip;</a>
-								</li>
-							}
-
-							//Pages
-							if (page <= totalPages)
-							{
-								for (int i = page - 4; i >= page - 4; i++)
-								{
-
-									if (i >= 1 && i != page)
-									{
-										<li>
-											<a href="?page=@i">@i</a>
-										</li>
-									}
-									if (i == page)
-									{
-										break;
-									}
-								}
-
-
-								<li>
-									<a class="pagination__Current" href="?page=@page">@page</a>
-								</li>
-
-
-								for (int x = page + 1; x <= page + 4; x++)
-								{
-									if (x <= totalPages && x != page)
-									{
-										<li>
-											<a href="?page=@x">@x</a>
-										</li>
-									}
-									if (x > totalPages)
-									{
-										break;
-									}
-								}
-
-
-							}
-
-
-
-
-							//Last Page
-							if (page < totalPages)
-							{
-								<li>
-									<a href="?page=@(totalPages)">&hellip;</a>
-
-								</li>
-								<li>
-									<a href="?page=@(page + 1)">&#9658;</a>
-
-								</li>
-							}
-							else if (page == totalPages)
-							{
-							}
-						}
-
-					</ul>
+					page = totalPages;
+				}
+				else if (page < 1)
+				{
+					page = 1;
 				}
 
-			</div>
-		}
+				foreach (var product in products.Skip((page - 1) * pageSize).Take(pageSize))
+				{
+					var productName = product.Name;
+					var productSerialNumber = product.Value("productSerialNumber");
+					<div class="col-sm-3">
+						<div class="card">
+							<div class="card-body">
+								<h4 class="card-title">@productName.Replace("_", " ")</h4>
+								<p class="card-text">@productSerialNumber</p>
+								@if (Members.IsLoggedIn())
+								{
+									var user = Members.CurrentUserName;
+									var services = Current.Services.MemberService;
+									var servicesResult = services.GetByUsername(user);
+									var currentUserFullName = servicesResult.Name;
+									var currentUserEmail = servicesResult.Email;
+
+									<form class="product_list m-0 p-0">
+										<input type="hidden" class="currentUserFullName" data-currentuserfullname="@currentUserFullName" />
+										<input type="hidden" class="productName" data-productname="@productName" />
+										<input type="hidden" class="currentUserEmail" data-currentuseremail="@currentUserEmail" />
+										<input type="hidden" class="productSerialNumber" data-productserialnumber="@productSerialNumber" />
+										<button type="submit" id="product_submit" class="btn btn-primary mb-2 product_submit">Buy Me!</button>
+									</form>
+								}
+							</div>
+						</div>
+					</div>
+				}
+
+			
+
+				<div class="pagination">
+
+					@if (totalPages > 0)
+					{
+						<ul>
+							Pagination
+							@{
+								int showMax = 8;
+
+								//First Page
+								if (page > 1)
+								{
+
+									<li>
+										<a href="?page=@(page - 1)">&#9668;</a>
+									</li>
+
+									<li>
+										<a href="?page=1">&hellip;</a>
+									</li>
+								}
+
+								//Pages
+								if (page <= totalPages)
+								{
+									for (int i = page - 4; i >= page - 4; i++)
+									{
+
+										if (i >= 1 && i != page)
+										{
+											<li>
+												<a href="?page=@i">@i</a>
+											</li>
+										}
+										if (i == page)
+										{
+											break;
+										}
+									}
+
+
+									<li>
+										<a class="pagination__Current" href="?page=@page">@page</a>
+									</li>
+
+
+									for (int x = page + 1; x <= page + 4; x++)
+									{
+										if (x <= totalPages && x != page)
+										{
+											<li>
+												<a href="?page=@x">@x</a>
+											</li>
+										}
+										if (x > totalPages)
+										{
+											break;
+										}
+									}
+
+
+								}
+
+
+
+
+								//Last Page
+								if (page < totalPages)
+								{
+									<li>
+										<a href="?page=@(totalPages)">&hellip;</a>
+
+									</li>
+									<li>
+										<a href="?page=@(page + 1)">&#9658;</a>
+
+									</li>
+								}
+								else if (page == totalPages)
+								{
+								}
+							}
+
+						</ul>
+					}
+
+				</div>
+			}
+		</div>
 	</div>
-</div>
+	<div>
+		<div class="col-12 mt-5 pt-5">
+			<div id="successfulPost" class="w-75 ml-auto mr-auto p-3 success">
+				<h3>Thank you for your purchase! Your Email is on the way :)</h3>
+			</div>
+		</div>
+	</div>
 }
 else
 {
