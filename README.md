@@ -7,7 +7,9 @@ Umbraco 8 Website built in VS with SQL DB
 SQL DB.bak and script is in /DB folder  
   
 Restore DB and us the following connection string:  
-<add name="umbracoDbDSN" connectionString="Server=MSI;Database=Acme_Corporation;Integrated Security=true" providerName="System.Data.SqlClient" />  
+
+      <!--add name="umbracoDbDSN" connectionString="Server=MSI;Database=Acme_Corporation;Integrated Security=true" providerName="System.Data.SqlClient" /-->  
+
 /////////////////////////////////////////////////////////////////////////////////////  
 SMTP and Email  
 /////////////////////////////////////////////////////////////////////////////////////  
