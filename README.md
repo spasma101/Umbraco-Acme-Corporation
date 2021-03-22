@@ -14,13 +14,8 @@ Restore DB and us the following connection string:
 SMTP and Email  
 /////////////////////////////////////////////////////////////////////////////////////  
 SMTP settings addded for ease of use with emails.  
-Temp server setup as well as local dump string, comment either and run preffered (emails can taker a few minutes to come):  
+Tlocal dump string, comment either and run preffered (email server can be setup):  
 
-      <!--smtp from="acme@corporation.com">  
-        <network enableSsl="true" host="smtp-relay.sendinblue.com" port="587" userName="jabbaaah@hotmail.com" password="nFh6A3dTX4CaMO2D" />  
-        <specifiedPickupDirectory pickupDirectoryLocation="C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Coporation\src\emails" />  
-      </smtp-->  
-  
       <!--<smtp deliveryMethod="SpecifiedPickupDirectory" from="acme@corporation.com">  
           <specifiedPickupDirectory pickupDirectoryLocation="C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Coporation\src\emails" />  
       </smtp>-->  
