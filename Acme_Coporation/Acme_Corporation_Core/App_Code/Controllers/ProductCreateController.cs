@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Web.Mvc;
-using Acme_Corporation_Core.Classes;
+using Acme_Corporation_Core.App_Code.Classes;
 using Umbraco.Core.Services;
 using Umbraco.Web.Mvc;
 

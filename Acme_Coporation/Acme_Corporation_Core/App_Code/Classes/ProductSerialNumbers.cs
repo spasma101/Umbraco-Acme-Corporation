@@ -9,7 +9,7 @@ using Umbraco.Core.Models.PublishedContent;
 using Umbraco.Core.Services;
 using Umbraco.Web;
 
-namespace Acme_Corporation_Core.Classes
+namespace Acme_Corporation_Core.App_Code.Classes
 {
 	public static class ProductSerialNumbers
 	{

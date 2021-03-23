@@ -8,7 +8,7 @@ using Umbraco.Core.Services;
 using Umbraco.Core.Models;
 using Umbraco.Core.Models.PublishedContent;
 
-namespace Acme_Corporation_Core.Classes
+namespace Acme_Corporation_Core.App_Code.Classes
 {
 	public static class ProductsCreate
 		{
@@ -92,6 +92,10 @@ namespace Acme_Corporation_Core.Classes
 				}
 			}
 
+			public static void Main()
+			{
+				Console.WriteLine("Hello World!");
+			}
 		}
 		
 }

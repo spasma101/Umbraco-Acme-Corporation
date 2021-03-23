@@ -65,3 +65,8 @@ C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Coporation
 npm install to install node_modules  
   
 'npm run dev' to begin compiling  
+
+Unit Tests
+Single Unit test added to project to check serial number entered is valid - ValidateProductSerialNumberUnitTest()
+Unfortunatly ran out of time to apply throughout all of project
+C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Coporation_Unit_Tests\UnitTest1.cs

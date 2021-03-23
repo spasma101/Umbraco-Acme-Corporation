@@ -97,7 +97,7 @@ var competition_form = {
 			} else {
 				e.preventDefault();
 			}
-		});
+		}); 
 
 		let current_url = window.location.href;
 		if (current_url.indexOf("success") > -1) {

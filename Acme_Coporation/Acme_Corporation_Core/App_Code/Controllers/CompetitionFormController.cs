@@ -1,20 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Web;
-using System.Web.Http.Results;
-using System.Web.Mvc;
-using Acme_Corporation_Core.App_Code.Helpers;
+﻿using Acme_Corporation_Core.App_Code.Helpers;
 using Acme_Corporation_Core.App_Code.Models;
 using Acme_Corporation_Core.App_Code.Repository;
-using Acme_Corporation_Core.Classes;
-using Umbraco.Core.Models.PublishedContent;
-using Umbraco.Core.Services;
-using Umbraco.Web;
+using Acme_Corporation_Core.App_Code.Classes;
+using System.Web;
+using System.Web.Http.Results;
 using Umbraco.Web.WebApi;
-using Umbraco.Web.Mvc;
 
 
 namespace Acme_Corporation_Core.App_Code.Controllers
@@ -44,7 +34,7 @@ namespace Acme_Corporation_Core.App_Code.Controllers
 			var firstname = HttpContext.Current.Request.Form["firstname"];
 			var lastname = HttpContext.Current.Request.Form["lastname"];
 			var emailaddress = HttpContext.Current.Request.Form["emailaddress"];
-			var productserialnumber = HttpContext.Current.Request.Form["productserialnumber"];
+			var productserialnumber = HttpContext.Current.Request.Form["productserialnumber"].ToLong();
 
 			var formdetails = firstname + " " + lastname + " " + emailaddress + " / " + productserialnumber;
 

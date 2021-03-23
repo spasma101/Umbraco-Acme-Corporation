@@ -1,0 +1,2 @@
+C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Coporation_Test\obj\Debug\Acme_Coporation_Test.csprojAssemblyReference.cache
+C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Coporation_Test\obj\Debug\Acme_Coporation_Test.csproj.CoreCompileInputs.cache

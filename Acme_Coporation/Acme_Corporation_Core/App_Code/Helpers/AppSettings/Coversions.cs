@@ -13,5 +13,10 @@ namespace Acme_Corporation_Core.App_Code.Helpers
 		{
 			return int.Parse(value);
 		}
+
+		public static long ToLong(this string value)
+		{
+			return long.Parse(value);
+		}
 	}
 }

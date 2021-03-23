@@ -290,7 +290,7 @@
     <Compile Include="App_Code\Services\SendEmailService.cs" />
     <Compile Include="App_Code\Services\SmtpService.cs" />
     <Compile Include="App_Code\ViewModels\ProductsPurchaseFormViewModel.cs" />
-    <Compile Include="Class1.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -52,6 +52,7 @@ C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Corporation_Core\
 C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Corporation_Core\bin\Debug\Newtonsoft.Json.dll
 C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Corporation_Core\bin\Debug\NPoco.dll
 C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Corporation_Core\bin\Debug\Owin.dll
+C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Corporation_Core\bin\Debug\RazorEngine.dll
 C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Corporation_Core\bin\Debug\Semver.dll
 C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Corporation_Core\bin\Debug\Serilog.dll
 C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Corporation_Core\bin\Debug\Serilog.Enrichers.Process.dll
@@ -123,6 +124,7 @@ C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Corporation_Core\
 C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Corporation_Core\bin\Debug\MiniProfiler.Shared.xml
 C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Corporation_Core\bin\Debug\Newtonsoft.Json.pdb
 C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Corporation_Core\bin\Debug\Newtonsoft.Json.xml
+C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Corporation_Core\bin\Debug\RazorEngine.xml
 C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Corporation_Core\bin\Debug\Semver.xml
 C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Corporation_Core\bin\Debug\Serilog.pdb
 C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Corporation_Core\bin\Debug\Serilog.xml
@@ -161,5 +163,3 @@ C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Corporation_Core\
 C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Corporation_Core\obj\Debug\Acme_Corporation_Core.dll
 C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Corporation_Core\obj\Debug\Acme_Corporation_Core.pdb
 C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Corporation_Core\obj\Debug\Acme_Corporation_Core.csprojAssemblyReference.cache
-C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Corporation_Core\bin\Debug\RazorEngine.dll
-C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Corporation_Core\bin\Debug\RazorEngine.xml

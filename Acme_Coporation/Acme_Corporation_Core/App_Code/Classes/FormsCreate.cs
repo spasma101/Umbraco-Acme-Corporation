@@ -9,7 +9,7 @@ using Umbraco.Core.Services;
 using Umbraco.Core.Models;
 using Umbraco.Core.Models.PublishedContent;
 
-namespace Acme_Corporation_Core.Classes
+namespace Acme_Corporation_Core.App_Code.Classes
 {
 	public static class FormsCreate
 		{
@@ -52,17 +52,23 @@ namespace Acme_Corporation_Core.Classes
 					}
 
 					if (existingFormEntry == null)
-					{
+					{ 
 					var name = formModel.FirstName + " " + formModel.LastName + " " + formModel.ProductSerialNumber;
 					var form = contentService.Create(name, forms_listing_page.Id, "Form");
 
 					form.SetValue("firstName", formModel.FirstName);
 					form.SetValue("lastName", formModel.LastName);
 					form.SetValue("emailAddress", formModel.Email);
-					form.SetValue("productSerialNumber", formModel.ProductSerialNumber);
 
-					contentService.SaveAndPublish(form);
-					return "Done!: One Code added";
+					bool validSerialNumber = false;
+					bool validateProductSerialNumber = ValidateProductSerialNumber(formModel.ProductSerialNumber, validSerialNumber);
+
+						if (validateProductSerialNumber)
+						{
+							form.SetValue("productSerialNumber", formModel.ProductSerialNumber);
+							contentService.SaveAndPublish(form);
+							return "Done!: One Code added";
+						}
 					}
 					if(existingFormEntry.GetValue("productSerialNumber2") == null)
 					{
@@ -83,6 +89,32 @@ namespace Acme_Corporation_Core.Classes
 					string mainError = ex.Message;
 					return null;
 				}
+			}
+			//This is for the Unit test example
+			public static bool ValidateProductSerialNumber(long serialNumber, bool validSerialNumber)
+			{
+				if (serialNumber >= 12329871237 && serialNumber <= 12329871336)
+				{
+					//return True
+					validSerialNumber = true;
+					return validSerialNumber;
+				}
+				//Return False
+				validSerialNumber = false;
+				return validSerialNumber;
+
+			}
+
+			public static bool ValidateProductSerialNumberUnitTest(long serialNumber, Type t)
+			{
+				if (serialNumber >= 12329871237 && serialNumber <= 12329871336)
+				{
+					//return True
+					return true;
+				}
+				//Return False
+				return false;
+
 			}
 
 		}

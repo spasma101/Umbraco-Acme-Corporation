@@ -12,7 +12,7 @@ using Acme_Corporation_Core.App_Code.Helpers;
 using Acme_Corporation_Core.App_Code.Models;
 using Acme_Corporation_Core.App_Code.Repository;
 using Acme_Corporation_Core.App_Code.Services;
-using Acme_Corporation_Core.Classes;
+using Acme_Corporation_Core.App_Code.Classes;
 using Acme_Corporation_Core.ViewModels;
 using log4net;
 using Umbraco.Core.Models.PublishedContent;
