@@ -26,12 +26,17 @@ var competition_form = {
 			errorElement: "span",
 			errorClass: "form-error",
 			rules: {
+                "inputLastName": { required: true, maxlength: 50},
 				"inputProductSerialNumber": { required: true, maxlength: 50, range: [12329871237, 12329871336]},
 				"inputEmailAddress": { required: true, email: true, maxlength: 50 },
 				"currentUserAge": { required: true, maxlength: 3, range: [18, 999] }
 	
 			},
 			messages: {
+                "inputLastName": {
+                    required: "Please Enter Your Surname",
+                    maxlength: "Max length exceeded"
+                },
 				"inputProductSerialNumber": {
 					required: "Please Enter a Valid Product Serial Number",
 					maxlength: "Max length exceeded",
