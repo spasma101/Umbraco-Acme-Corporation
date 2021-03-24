@@ -14,7 +14,7 @@ Restore DB and us the following connection string:
 SMTP and Email  
 /////////////////////////////////////////////////////////////////////////////////////  
 SMTP settings addded for ease of use with emails.  
-Tlocal dump string, comment either and run preffered (email server can be setup):  
+Local dump string, (email server can be setup):  
 
       <!--<smtp deliveryMethod="SpecifiedPickupDirectory" from="acme@corporation.com">  
           <specifiedPickupDirectory pickupDirectoryLocation="C:\Repo\Personal\Umbraco_Acme_Corporation\Acme_Coporation\Acme_Coporation\src\emails" />  
