@@ -263,6 +263,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="App_Code\Classes\DIProgram.cs" />
     <Compile Include="App_Code\Classes\FormsCreate.cs" />
     <Compile Include="App_Code\Classes\ProductsCreate.cs" />
     <Compile Include="App_Code\Classes\ProductSerialNumbers.cs" />

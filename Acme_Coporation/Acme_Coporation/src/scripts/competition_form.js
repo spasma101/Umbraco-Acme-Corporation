@@ -70,22 +70,22 @@ var competition_form = {
 					data: formData,
 					success: function (result, status, xhr) {
 						if (result === "Status = : Done!: One Code added") {
-							alert(result);
+							//alert(result);
 							window.location.replace("/amazing-competition-page/?success=true");
 							return;
 						}
 						if (result === "Status = : Done!: Second code added") {
-							alert(result);
+							//alert(result);
 							window.location.replace("/amazing-competition-page/?success=true");
 							return;
 						}
 						if (result === "Status = : Error: too many entries made") {
-							alert(result);
+							//alert(result);
 							window.location.replace("/amazing-competition-page/?error=too-many-entries");
 							return;
 						}
 						if (result === "Status = : Error: Form Creation Failed") {
-							alert(result);
+							//alert(result);
 							window.location.replace("/amazing-competition-page/?error=form-submit-failed");
 							return;
 						}

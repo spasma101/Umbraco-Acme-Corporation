@@ -43,9 +43,8 @@ var product_purchase_form = {
 				processData: false, 
 				data: formData,
 				success: function (result, status, xhr) {
-					alert(result);
 					if (result.includes("Status = :")) {
-						alert(result);
+						//alert(result);
 						window.location.replace("/products-list/?success=true");
 						return;
 					}

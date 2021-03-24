@@ -1,0 +1,19 @@
+X-Sender: acme@corporation.com
+X-Receiver: ace@acme.com
+MIME-Version: 1.0
+From: acme@corporation.com
+To: ace@acme.com
+Date: 23 Mar 2021 20:32:02 +0000
+Subject: Congrats on your purchase!!!
+Content-Type: text/html; charset=us-ascii
+Content-Transfer-Encoding: quoted-printable
+
+=0D=0A<!DOCTYPE html>=0D=0A=0D=0A<html>=0D=0A<head>=0D=0A	<meta n=
+ame=3D"viewport" content=3D"width=3Ddevice-width" />=0D=0A	<title=
+>You are flying here!</title>=0D=0A</head>=0D=0A<body>=0D=0A<h2>C=
+ongratulations on your purchase!</h2>=0D=0A<p><span style=3D"font=
+-weight: bold">Full Name: </span> ace ventura</p>=0D=0A<p><span s=
+tyle=3D"font-weight: bold">Email Address: </span> ace@acme.com</p=
+>=0D=0A<p><span style=3D"font-weight: bold">Product Name: </span>=
+ desk</p>=0D=0A<p><span style=3D"font-weight: bold">Product Seria=
+l Number: </span> 12329871244</p>=0D=0A</body>=0D=0A</html>

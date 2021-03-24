@@ -5,7 +5,9 @@
 	<div class="header__top-nav-container">
 		<div class="header__top-section">
 			<div class="header__logo">
-				<img src="~/src/images/acme_logo.svg" alt="Alternate Text" />
+				<a href="/">
+					<img src="~/src/images/acme_logo.svg" alt="Alternate Text" />
+				</a>
 			</div>
 
 			<ul class="header__top-links">
@@ -19,6 +21,7 @@
 
 					<li><a href="/" target="">Home</a></li>
 					<li><a href="/products-list/" target="">Products</a></li>
+					<li><a href="/amazing-competition-page/" target="">Competition</a></li>
 					<li><a href="/login-page/" target="">Account</a></li>
 
 
@@ -30,7 +33,7 @@
 
 			</ul>
 			@{
-				if(Umbraco.MemberIsLoggedOn())
+				if (Umbraco.MemberIsLoggedOn())
 				{
 					Html.RenderAction("RenderLogout", "Member");
 				}

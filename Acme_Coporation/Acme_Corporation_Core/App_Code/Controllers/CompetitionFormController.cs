@@ -1,4 +1,5 @@
-﻿using Acme_Corporation_Core.App_Code.Helpers;
+﻿using System;
+using Acme_Corporation_Core.App_Code.Helpers;
 using Acme_Corporation_Core.App_Code.Models;
 using Acme_Corporation_Core.App_Code.Repository;
 using Acme_Corporation_Core.App_Code.Classes;
@@ -9,10 +10,13 @@ using Umbraco.Web.WebApi;
 
 namespace Acme_Corporation_Core.App_Code.Controllers
 {
+
 	public class CompetitionFormController : UmbracoApiController
 	{
 
 		private readonly CompetitionFormRepository _competitionFormRepository;
+
+
 
 		public CompetitionFormController()
 			: this(
@@ -28,9 +32,12 @@ namespace Acme_Corporation_Core.App_Code.Controllers
 			_competitionFormRepository = competitionFormRepository;
 		}
 
+
+
 		[System.Web.Http.HttpPost]
 		public JsonResult<string> CompetitionFormSubmit()
 		{
+
 			var firstname = HttpContext.Current.Request.Form["firstname"];
 			var lastname = HttpContext.Current.Request.Form["lastname"];
 			var emailaddress = HttpContext.Current.Request.Form["emailaddress"];
